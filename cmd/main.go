@@ -1,14 +1,15 @@
 package main
 
 import (
+	"log"
+
+	"github.com/Xusrav/Questions/bonus/fifthquestion"
 	// "github.com/Xusrav/Questions/questions/secondquestion"
 	// "github.com/Xusrav/Questions/bonus/thirdquestion"
 	// "github.com/Xusrav/Questions/questions/firstquestion"
 	// "log"
-
 	// "fmt"
-
-	"github.com/Xusrav/Questions/bonus/fourthquestion"
+	// "github.com/Xusrav/Questions/bonus/fourfthquestion"
 )
 
 func main() {
@@ -25,8 +26,12 @@ func main() {
 	// top3 := secondquestion.TopCandidatesComputation(3)
 	// log.Print(top3)
 
-	nr, dr := 4, 13
+	// digit1, digit2 := 4, 13
 	// fmt.Print("Egyptian Fraction Representation of ", nr, "/", dr, " is\n ")
-	fourthquestion.EgyptVersionCalculate(nr, dr)
+	// fourthquestion.EgyptVersionCalculate(digit1, digit2)
 
+	
+	result := fifthquestion.FromNumbersToLetters(705)
+	log.Println("Correct answer is: 'AAC', my answer is", result)
+	
 }
